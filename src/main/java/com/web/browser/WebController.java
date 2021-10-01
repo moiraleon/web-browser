@@ -24,4 +24,6 @@ public class WebController {
     public String index() {
         return "home.html";
     }
+
+
 }

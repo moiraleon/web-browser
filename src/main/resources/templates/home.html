@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #111;
+  border-right: 1px solid #bbb;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+    </style>
 </head>
 <body>
 
 <h1>Hello This is the front page</h1>
+
+<ul>
+    <li><a href="default.asp">Home</a></li>
+    <li><a href="news.asp">Mission</a></li>
+    <li><a href="contact.asp">Success Stories</a></li>
+    <li style="float:right"><a href="about.asp">Contact</a></li>
+</ul>
 
 </body>
 </html>
