@@ -3,6 +3,7 @@ package com.web.browser;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 //@RestController
@@ -14,8 +15,13 @@ public class WebController {
 //        return "Greetings from Spring Boot!";
 //    }
 
-    @RequestMapping("/")
-    public String welcome() {
-        return "home";
+//    @RequestMapping("/")
+//    public String welcome() {
+//        return "home";
+//    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/")
+    public String index() {
+        return "home.html";
     }
 }
