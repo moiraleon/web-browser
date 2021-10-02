@@ -25,5 +25,19 @@ public class WebController {
         return "home.html";
     }
 
+    @RequestMapping(method = RequestMethod.GET, value = "/contact")
+    public String contact() {
+        return "contact.html";
+    }
+    @RequestMapping(method = RequestMethod.GET, value = "/mission")
+    public String mission() {
+        return "mission.html";
+    }
+    @RequestMapping(method = RequestMethod.GET, value = "/success-stories")
+    public String successStories() {
+        return "success-stories.html";
+    }
+
+
 
 }
