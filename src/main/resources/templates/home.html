@@ -38,6 +38,15 @@ li:last-child {
   border-right: none;
 }
 
+.fling-minislide {width:100%; height:0px; padding-bottom: 50%; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
+
     </style>
 </head>
 <body>
@@ -50,6 +59,17 @@ li:last-child {
     <li><a href="/success-stories">Success Stories</a></li>
     <li style="float:right"><a href="/contact">Contact</a></li>
 </ul>
+
+
+<div class="fling-minislide">
+
+    <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F121344529%2F360116271867%2F1%2Foriginal.20201220-000105?w=1000&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=002d15da3989f7fe14c780d573a2159b" alt="Slide 4">
+    <img src="https://mhawny.org/app/uploads/2020/07/aboutBanner.jpg" alt="Slide 3"/>
+    <img src="https://heal.hospiceheart.org/wp-content/uploads/sites/5/2016/09/gb.jpg" alt="Slide 2" />
+
+    <img src="https://nami-pinellas.org/wp-content/uploads/2020/11/AdobeStock_301126024-scaled.jpeg" alt="Slide 1" />
+</div>
+
 
 </body>
 </html>
