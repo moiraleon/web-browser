@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 //@RestController
 @Controller
 public class WebController {
@@ -36,11 +38,22 @@ public class WebController {
         return "success-stories.html";
     }
 
-//    @RequestMapping("/post/{id}")
+
+    //need to be configured for thymeleaf
+//    @RequestMapping("/success-stories")
+//    public String listStories(ModelMap modelMap){
+//        List<Story> story = StoryRepository.getAll_STORIES();
+//        modelMap.put("stories",stories);
+//        return "success-stories.html";
+//    }
+
+
+
+//    @RequestMapping("/story/{id}")
 //    public String postDetails(@PathVariable Long id, ModelMap modelMap){
-//        Post post = postRepository.findById(id);
-//        modelMap.put("post", post);
-//        return "post-details";
+//        Story story = StoryRepository.findById(id);
+//        modelMap.put("story", story);
+//        return "story-details.html";
 //
 //    }
 
